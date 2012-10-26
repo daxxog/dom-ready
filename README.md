@@ -1,4 +1,12 @@
 dom-ready
 =========
 
-Short function that emulates the jQuery ready function without jQuery
+emulates jQuery.ready() behavior -- without jQuery
+
+Usage
+---------
+```javascript
+r(function() {
+    alert("hello world!");
+});
+```
