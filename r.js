@@ -10,7 +10,7 @@ r = function(f) {
     var g = (typeof f != 'undefined'); //if function exists
     
     if(!t) { //if stack does not exist
-        r.s = {}; //create it
+        r.s = []; //create it
     }
     if(typeof r.r == 'undefined') { //if is running checker undefined
         r.r = false; //set is running checker to "running"
@@ -19,7 +19,7 @@ r = function(f) {
     if(document.readyState=="complete") { //it is now ready
         if(t) { //if stack exists
             var c = r.s; //copy the stack to local memory
-            r.s = {}; //clear the stack
+            r.s = []; //clear the stack
             
             for(var i=0;i<c.length;i++) { //loop through the stack
                 c[i](); //run each function
