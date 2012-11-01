@@ -33,7 +33,7 @@ r = function(f) {
         }
     } else {
         if(g) { //if function exists
-            r.s.push(f);
+            r.s.push(f); //push the function onto the stack
             
             if(!r.r) { //if is not running
                 r.r = true; //set is running checker to "running" 
